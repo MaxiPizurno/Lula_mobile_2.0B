@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 2em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.2em;}
+h6{font-size: 1.1em;}
+p{font-size: 1.2em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #539191;
+}
+header .logo{
+    margin: 0;
+    padding: 10px 30px;
+    width: 200px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+    header a{
+    
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(12, 31, 26);
+    font-size: 1.3em;
+}
+
+header a:hover{
+    color: rgba(208, 236, 231);
+}
+
+#bienvenida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/sojarelle.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#bienvenida h1{
+    padding: 0px 30px;
+    color: rgba(208, 236, 231);
+}
+#bienvenida h3{
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    padding: 0px 30px;
+}
+
+#nuestros-productos{
+    background-color: rgba(50, 122, 107, 0.9);
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+#nuestros-productos .container{
+    padding: 40px 20px;
+}
+
+#nuestros-productos h2{
+    font-size: 1.8em;
+    margin-top: 0;
+    color: rgba(208, 236, 231);
+}
+
+#nuestros-productos h3{
+    font-size: 1.7em;
+    margin:0;
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(208, 236, 231);
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/soja_rellena.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/yamani.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/pizza.jpeg");
+}
+
+.carta:nth-child(4){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/tarta.jpg");
+}
+
+#lista-de-precios{
+    background-color: rgba(50, 122, 107, 0.9);
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+#lista-de-precios .container{
+    padding: 50px 20px;
+}
+
+#lista-de-precios h2{
+    color: rgba(208, 236, 231);
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+#lista-de-precios h3{
+    font-size: 1.7em;
+    margin: 0 0 30px 0;
+}
+
+#lista-de-precios p{
+    font-size: 1.3em;
+    margin:0;
+}
+
+
+#lista-de-precios .carta2{
+background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(208, 236, 231);
+}
+
+.carta2:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/sojahielo.jpeg");
+}
+
+.carta2:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/hamb.jpeg");
+}
+
+.carta2:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/fuga.jpeg");
+}
+.carta2:nth-child(4){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("media/tarta.jpg");
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(50, 122, 107, 0.9);
+    color: rgba(208, 236, 231);
+}
+
+#contacto h2{
+    margin-top: 50px;
+    color: rgba(208, 236, 231);
+    font-size: 1.8em;
+}
+.contactimg{
+    width: 100px;
+}
+
+footer{
+    background-color: rgba(50, 122, 107, 0.9);
+    color: rgba(208, 236, 231);
+    text-align: center;
+}
+
+footer p{
+    color: rgba(208, 236, 231);
+    font-size: 0.6em;
+    padding: 10px;
+    margin: 0;
+}
